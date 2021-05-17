@@ -32,10 +32,6 @@ booksRouter.get('/',function(req,res){
     });
 });
 
-booksRouter.get('/single', function(req,res){
-    res.send("Hey I'm a single book");
-});
-
 booksRouter.get('/:id', function(req,res){
     const id = req.params.id
     res.render('book',{
